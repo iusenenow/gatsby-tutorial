@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    title: "This is an about page from siteMetadata"
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-emotion`,
