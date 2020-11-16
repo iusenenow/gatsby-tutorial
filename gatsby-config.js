@@ -1,8 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: "This is an about page from siteMetadata"
+    title: "Pandas Eating Lots"
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-emotion`,
       options: {
